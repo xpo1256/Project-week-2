@@ -52,16 +52,20 @@ dataController.create = async (req, res, next) => {
 }
 
 dataController.show = async (req, res, next) => {
-    try {
-        res.locals.data.restaurant = await Restaurant.findById(req.params.id)
-        if(!res.locals.data.restaurant){
-            throw new error(`could not locate a restaurant with the id ${req.params.id}`)
-        }
-        next()
-    } catch (error) {
-      res.status(400).send({ message: error.message })
+
+  try {
+    res.locals.data.restaurant = await Restaurant.findById(req.params.id);
+    if (!res.locals.data.restaurant) {
+      throw new Error(`Could not locate a restaurant with the id ${req.params.id}`);
     }
-}
+
+    res.locals.data.token = req.query.token || res.locals.data.token || '';
+    next();
+  } catch (error) {
+    res.status(400).send({ message: error.message });
+  }
+};
+
 
 
 module.exports = dataController

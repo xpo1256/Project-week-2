@@ -24,7 +24,13 @@ const userSchema = new mongoose.Schema({
   restaurants: [{
     type: mongoose.Schema.Types.ObjectId,
     ref: 'restaurant'
-  }]
+  }],
+    reviews: [
+    {
+      type: mongoose.Schema.Types.ObjectId,
+      ref: 'reviews'
+    }
+  ]
 }); 
 
 userSchema.methods.toJSON = function() {

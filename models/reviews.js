@@ -1,18 +1,19 @@
 const React = require('react');
+const mongoose = require('mongoose');
 
-const reviewsSchema = new Schema({
+const reviewsSchema = new mongoose.Schema({
   name: {
     type: String,
     required: true
   },
-  food: {
+  restaurant: {
     type: String,
     required: true,
   },
-  description: {
+  review: {
     type: String,
-    required: true
+    required: false
   },
 }); 
 
-module.exports = reviewsSchema;
+module.exports = mongoose.model('reviews', reviewsSchema);

@@ -20,14 +20,13 @@ function Edit(props) {
                     <input type='text' name='food' id='food' defaultValue={food} />
 
                     <label>Details</label>
-                    <input type='text' name='description' id='description' defaultValue={description} />
+                    <input type='text' name='review' id='review' defaultValue={review} />
 
                     <label>Location</label>
                     <input type='text' name='location' id='location' defaultValue={location} />
 
                     <button className='submit' type='submit'>Submit</button>
                     <a className='backindex' href={`/restaurant/${_id}?token=${props.token}`}>Back to Edit</a>
-
                 </form>
             </div>
         </div>

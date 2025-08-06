@@ -4,6 +4,7 @@ const jsxEngine = require('jsx-view-engine')
 const methodOverride = require('method-override')
 const userRoutes = require('./controllers/auth/routeController')
 const restRoutes = require('./controllers/restaurant/restaurantRoutes')
+const reviewRoutes = require('./controllers/review/reviewRouter')
 const app = express()
 
 const path = require("path")
@@ -24,5 +25,6 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/users', userRoutes)
 app.use('/restaurant', restRoutes)
+app.use('/reviews', reviewRoutes)
 
 module.exports = app

@@ -9,6 +9,7 @@ function Index(props) {
                 <link rel='stylesheet' href='/css/indexRest.css'></link>
             </header>
             <div className='top-bar'>
+                <a href={`/reviews/?token=${props.token}`} className='New'>Reviews</a>
                 <div className='title'><h1 className='headR'>Restaruant</h1></div>
                 <a href='/users/login' className='logOut'>Log Out ←</a>
                 <a href={`/restaurant/New?token=${props.token}`} className='New'>Add Restaurant</a>
@@ -17,7 +18,7 @@ function Index(props) {
                 {restaurants.map((restaurant) => (
                     <div className='rest-card' key={restaurant._id}>
                         <a href={`/restaurant/${restaurant._id}?token=${props.token}`}>
-                            <img className='restImage'src={restaurant.image} alt={restaurant.name} />
+                            <img src={restaurant.image} alt={restaurant.name} />
                         </a>
                     </div>
                 ))}
