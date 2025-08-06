@@ -1,0 +1,105 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: 'Poppins', sans-serif;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),url("/assest/images/Edit.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.container {
+  width: 500px;
+  height: 320px;
+  padding: 35px 30px;
+  background-color: rgba(255, 255, 255, 0.08);
+  border-radius: 16px;
+  backdrop-filter: blur(15px);
+  box-shadow: 0 4px 25px rgba(0, 0, 0, 0.5);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  place-content: center;
+  margin-left: 450px;
+  gap: 18px;
+}
+
+.head {
+  text-align: center;
+  font-size: 100px;
+  font-weight: bold;
+  font-family: 'Contact', cursive;
+  margin-bottom: 20px;
+  color: #ffd76a;
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.4);
+}
+
+label {
+  font-size: 14px;
+  font-weight: 600;
+  color: #fff;
+  margin-bottom: 8px;
+  margin-top: 8px;
+  display: block;
+}
+
+input[type="text"] {
+  width: 90%;
+  padding: 12px 14px;
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  background-color: rgba(255, 255, 255, 0.12);
+  font-size: 15px;
+  color: #fff;
+  transition: all 0.3s ease;
+}
+
+input[type="text"]:focus {
+  background-color: rgba(255, 255, 255, 0.2);
+  border-color: #ffd76a;
+  outline: none;
+}
+
+input[type="text"]::placeholder {
+  color: #ddd;
+}
+
+.submit {
+  border: none;
+  border-radius: 28px;
+  padding: 12px;
+  font-size: 16px;
+  background: linear-gradient(135deg, #c9a645, #a8803b);
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  width: 30%;
+  margin-top: 20px;
+  margin-right: 220px ;
+  transition: transform 0.2s ease, background 0.3s ease;
+}
+
+.submit:hover {
+  background: linear-gradient(135deg, #e0bb57, #b7903a);
+  transform: scale(1.05);
+}
+
+.backindex {
+  display: inline-block;
+  text-decoration: none;
+  color: #ffd76a;
+  font-size: 16px;
+  text-align: center;
+  margin-top: 10px;
+  transition: color 0.3s ease;
+}
+
+.backindex:hover {
+  color: #fff;
+}
+
+@font-face {
+  font-family: 'Contact';
+  src: url("../fonts/Contact.ttf");
+}

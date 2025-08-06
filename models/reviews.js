@@ -8,7 +8,6 @@ const reviewsSchema = new Schema({
   food: {
     type: String,
     required: true,
-    unique: true
   },
   description: {
     type: String,

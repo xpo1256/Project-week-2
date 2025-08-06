@@ -1,9 +1,12 @@
-const React = require('react');
+const mongoose = require('mongoose')
 
-const RestaurantSchema = new Schema({
+const RestaurantSchema = new mongoose.Schema({
   name: {
     type: String,
     required: true
+  },
+  image: {
+    type: String
   },
   food: {
     type: String,
@@ -20,4 +23,4 @@ const RestaurantSchema = new Schema({
     },
 }); 
 
-module.exports = RestaurantSchema;
+module.exports = mongoose.model('restaurant', RestaurantSchema)
