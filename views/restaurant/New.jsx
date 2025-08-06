@@ -5,6 +5,7 @@ function New (props){
         <div>
             <div className='head'>
                 Add Your Restaurant with Dishly
+                <link rel='stylesheet' href='/css/new.css'></link>
             </div>
             <div className='container'>
                 <form action={`/restaurant?token=${props.token}`} method="POST">

@@ -6,7 +6,7 @@ function Index(props) {
   return (
     <div>
       <header>
-        <link rel='stylesheet' href='/css/indexRest.css' />
+        <link rel='stylesheet' href='/css/reviewindex.css' />
       </header>
       <div className='top-bar'>
         <a href={`/reviews/new?token=${props.token}`} className='New'>Add Review</a>

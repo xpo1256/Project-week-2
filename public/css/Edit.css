@@ -10,8 +10,8 @@ html, body {
 }
 
 .container {
-  width: 500px;
-  height: 320px;
+  width: 490px;
+  height: 380px;
   padding: 35px 30px;
   background-color: rgba(255, 255, 255, 0.08);
   border-radius: 16px;
@@ -27,7 +27,7 @@ html, body {
 
 .head {
   text-align: center;
-  font-size: 100px;
+  font-size: 90px;
   font-weight: bold;
   font-family: 'Contact', cursive;
   margin-bottom: 20px;
@@ -40,7 +40,7 @@ label {
   font-weight: 600;
   color: #fff;
   margin-bottom: 8px;
-  margin-top: 8px;
+  margin-top: 15px;
   display: block;
 }
 
@@ -89,10 +89,33 @@ input[type="text"]::placeholder {
   display: inline-block;
   text-decoration: none;
   color: #ffd76a;
-  font-size: 16px;
+  font-size: 20px;
   text-align: center;
-  margin-top: 10px;
   transition: color 0.3s ease;
+}
+
+.btn-danger {
+  border: none;
+  border-radius: 28px;
+  padding: 12px;
+  font-size: 16px;
+  background: linear-gradient(135deg, #ac3636, #ac3636);
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  width: 30%;
+  align-self: center;
+  margin-top: 10px;
+  transition: transform 0.2s ease, background 0.3s ease;
+}
+
+.btn-danger:hover {
+  background: linear-gradient(135deg, #bc4040, #bc4040);
+  transform: scale(1.05);
+}
+
+.btn-delete{
+  width: 100%;
 }
 
 .backindex:hover {

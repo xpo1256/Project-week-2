@@ -20,7 +20,7 @@ function Edit(props) {
                     <input type='text' name='food' id='food' defaultValue={food} />
 
                     <label>Details</label>
-                    <input type='text' name='review' id='review' defaultValue={review} />
+                    <input type='text' name='description' id='description' defaultValue={description} />
 
                     <label>Location</label>
                     <input type='text' name='location' id='location' defaultValue={location} />
