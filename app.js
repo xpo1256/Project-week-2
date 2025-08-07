@@ -34,7 +34,7 @@ app.use('/reviews', reviewRoutes);
 
 // ✅ Home route — this is what fixes the 404
 app.get('/', (req, res) => {
-    res.render('Home'); // Make sure 'views/Home.jsx' exists
+    res.render('/users/login'); 
 });
 
 module.exports = app;
