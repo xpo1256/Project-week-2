@@ -103,5 +103,5 @@ Dishly/
 ## GitHub Profile 
 [GitHub](https://github.com/xpo1256)
 
-# Link for Repo
-[Repo]()
+# Link for Repositories To Find The Website
+[Repositories](https://github.com/xpo1256/Project-week-2)
