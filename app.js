@@ -32,9 +32,9 @@ app.use('/users', userRoutes);
 app.use('/restaurant', restRoutes);
 app.use('/reviews', reviewRoutes);
 
-// ✅ Home route — this is what fixes the 404
+
 app.get('/', (req, res) => {
-    res.render('/users/login'); 
+    res.render('/login'); 
 });
 
 module.exports = app;
