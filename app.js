@@ -34,7 +34,7 @@ app.use('/reviews', reviewRoutes);
 
 
 app.get('/', (req, res) => {
-    res.render('/users/login'); 
+    res.render('/auth/SignIn'); 
 });
 
 module.exports = app;
