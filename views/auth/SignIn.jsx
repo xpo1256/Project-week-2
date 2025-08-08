@@ -22,7 +22,7 @@ function Login() {
 
           <br />
           <button type="submit" className="submitbtn">Submit</button>
-          <a className='create' href='/users'>Create New Account</a>
+          <a className='create' href='/users/signup'>Create New Account</a>
         </form>
       </div>
     </>
