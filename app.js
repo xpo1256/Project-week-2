@@ -33,8 +33,12 @@ app.use('/restaurant', restRoutes);
 app.use('/reviews', reviewRoutes);
 
 
-app.get('/', (req, res) => {
+app.get('/login', (req, res) => {
     res.render('auth/SignIn'); 
+});
+
+app.get('/', (req, res) => {
+    res.render('/users'); 
 });
 
 
